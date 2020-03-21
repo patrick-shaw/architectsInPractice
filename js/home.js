@@ -25,7 +25,6 @@ window.onload = () => {
 
     homeProject.src = `img/home-img/project-${randNum}.jpg`;
 
-
     homeTitleSelect(randNum);
 
     projectLink.href = `${homeTitle.innerHTML}.html`

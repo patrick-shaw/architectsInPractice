@@ -321,7 +321,7 @@ button:focus {
 }
 
 .people-container {
-    max-width: 1000px;
+    max-width: 800px;
     width: 65%;
     margin: 0 auto;
     padding: 130px 0 60px;
@@ -342,7 +342,7 @@ button:focus {
 }
 
 .person-name, .person-title {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .person-title {
@@ -350,7 +350,7 @@ button:focus {
 }
 
 .person-info p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* ===== CONTACT PAGE ===== */
@@ -449,6 +449,18 @@ button:focus {
     color: #fff;
 }
 
+/* PRATICE PAGE FOOTER */
+.practice-page footer .footer-container {
+    max-width: 1200px;
+    padding: 60px 50px;
+}
+/* PEOPLE PAGE FOOTER */
+.people-page footer .footer-container {
+    max-width: 800px;
+    padding: 60px 0;
+    width: 65%;
+}
+
 footer .footer-container {
     padding: 60px 40px;
     max-width: 1000px;
@@ -495,6 +507,13 @@ footer h3 {
     .single-cats, .single-details {
         font-size: 10px;
         line-height: 2.5;
+    }
+    /* PEOPLE PAGE */
+    .person-name, .person-title {
+        font-size: 20px;
+    }
+    .person-info p {
+        font-size: 14px;
     }
     /* CONTACT PAGE */
     .contact-content {
@@ -616,6 +635,13 @@ footer h3 {
     
 
     /* FOOTER */
+    .practice-page footer .footer-container {
+        padding: 60px 30px;
+    }
+    .people-page footer .footer-container {
+        width: 100%;
+        padding: 60px 40px;
+    }
     footer h2 {
         font-size: 24px;
     }
@@ -639,6 +665,11 @@ footer h3 {
     }
     .proj-desc h3 {
         font-size: 12px;
+    }
+
+    /* FOOTER */
+    .practice-page footer .footer-container {
+        padding: 60px 20px;
     }
 
 }
