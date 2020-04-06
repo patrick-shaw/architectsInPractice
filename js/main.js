@@ -14,3 +14,21 @@ images.forEach(image => {
         .setClassToggle(image, 'visible')
         .addTo(controller);
 })
+
+
+//italic project title
+
+const projectContainer = document.querySelectorAll('.project-pb');
+
+projectContainer.forEach(item => {
+    const projImg = item.querySelector('img');
+    const title = item.querySelector('h2');
+    console.log(projImg);
+
+    projImg.addEventListener('mouseover', () => {
+        title.classList.add('italic');
+    })
+    projImg.addEventListener('mouseout', () => {
+        title.classList.remove('italic');
+    })
+})
