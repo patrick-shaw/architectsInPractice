@@ -492,16 +492,17 @@ button:focus {
 
 .single-page footer .footer-container,
 .project-page footer .footer-container,
-.practice-page footer .footer-container {
+.practice-page footer .footer-container,
+.people-page footer .footer-container {
     max-width: 1400px;
     padding: 60px 50px;
 }
 /* PEOPLE PAGE FOOTER */
-.people-page footer .footer-container {
+/* .people-page footer .footer-container {
     max-width: 800px;
     padding: 60px 0;
     width: 65%;
-}
+} */
 
 footer .footer-container {
     padding: 60px 40px;
@@ -526,6 +527,10 @@ footer h3 {
     .header-brand, .navbar-expand-sm .navbar-nav {
         font-size: 36px;
         padding: 0 5px;
+    }
+
+    .container {
+        max-width: 1200px
     }
 }
 
