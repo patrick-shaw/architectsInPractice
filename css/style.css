@@ -32,12 +32,18 @@ a:hover {
     text-decoration: none;
     font-style: italic;
 }
+
+a.navbar-brand:hover {
+    font-style: normal;
+}
  
 li {
     list-style: none;
 }
 
 /* -----HEADER----- */
+
+
 
 .header-brand {
     position: absolute;
@@ -47,11 +53,25 @@ li {
     text-transform: uppercase;
 }
 
+.header-brand, .navbar-expand-sm .navbar-nav {
+    font-size: 40px;
+    padding: 0 6px;
+}
+
+/* .home-container .header-brand, .home-container .navbar-expand-sm .navbar-nav  {
+    font-size: 40px;
+    padding: 0 5px;
+}
+
+.project-page .header-brand, .project-page .navbar-expand-sm .navbar-nav {
+    font-size: 40px;
+    padding: 0 5px;
+} */
+
 .navbar-expand-sm .navbar-nav {
     position: absolute;
     top: 5px;
     right: 10px;
-    font-size: 32px;
     line-height: 1.3;
     flex-direction: column;
 }
@@ -116,7 +136,7 @@ button:focus {
 
 .title {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 24px;
@@ -139,7 +159,7 @@ button:focus {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 200px 50px 50px;
 }
 
@@ -164,6 +184,7 @@ button:focus {
 
 .proj-desc h2 {
     font-size: 32px;
+    margin-bottom: 4px;
 }
 
 .proj-desc h3 {
@@ -181,6 +202,12 @@ button:focus {
     color: #fff;
     text-decoration: none;
 }
+
+.single-page .container {
+    color: #4e4e4e;
+    padding-top: 80px;
+}
+
 
 .showcase {
     height: 100vh;
@@ -202,13 +229,13 @@ button:focus {
 
 .container-single {
     color: #4e4e4e;
-    max-width: 1200px;
+    /* max-width: 1200px;
     padding: 80px 60px;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 .single-desc {
-    padding: 30px 0 80px 0;
+    padding: 30px 0 100px 0;
 }
 
 .description {
@@ -245,7 +272,7 @@ button:focus {
 
 .back-top {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     color: #4e4e4e;
     margin: 100px 0;
 }
@@ -264,40 +291,28 @@ button:focus {
 }
 
 .single-full-img {
+    height: 75vh;
     width: 100%;
 }
 
 .single-full-img img {
     width: 100%;
-    max-height: 95vh;
+    height: 100%;
+    /* max-height: 95vh; */
     object-fit: cover;
 }
 
 .single-auto-img {
     width: 100%;
+    height: 75vh;
     display: flex;
     justify-content: center;
 }
 
 .single-auto-img img {
     width: auto;
-    height: auto;
-    max-height: 70vh;
-    max-width: 50%;
-    object-fit: cover;
-}
-
-.single-auto-plan {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.single-auto-plan img {
-    width: auto;
-    height: auto;
-    max-height: 70vh;
-    max-width: 80%;
+    height: 100%;
+    max-width: 60%;
     object-fit: cover;
 }
 
@@ -320,6 +335,10 @@ button:focus {
 .practice-desc {
     color: #4e4e4e;
     margin-bottom: 40px;
+}
+
+.practice-desc h3 {
+    font-size: 32px;
 }
 
 /* ===== PEOPLE ===== */
@@ -385,6 +404,8 @@ button:focus {
 
 .contact-page {
     height: 100%;
+    width: 100%;
+    padding: 0 50px;
     overflow: hidden;
     background-color: #ff6b6b;
     position: relative;
@@ -394,7 +415,8 @@ button:focus {
 }
 
 .contact-content {
-    width: 811px;
+    width: 100%;
+    max-width: 1400px;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -408,7 +430,8 @@ button:focus {
 
 .contact-content .map {
     width: 100%;
-    height: 461px;
+    height: 75vh;
+    /* height: 461px; */
     margin-bottom: 30px;
     background-color: lightgray;
 }
@@ -466,15 +489,11 @@ button:focus {
     background-color: #4e4e4e;
     color: #fff;
 }
-/* PROJECTS PAGE FOOTER */
-.project-page footer .footer-container {
-    max-width: 1200px;
-    padding: 60px 50px;
-}
 
-/* PRATICE PAGE FOOTER */
+.single-page footer .footer-container,
+.project-page footer .footer-container,
 .practice-page footer .footer-container {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 60px 50px;
 }
 /* PEOPLE PAGE FOOTER */
@@ -503,10 +522,17 @@ footer h3 {
 }
 
 /* ===== MEDIA QUERIES ===== */
+@media(max-width: 1500px) {
+    .header-brand, .navbar-expand-sm .navbar-nav {
+        font-size: 36px;
+        padding: 0 5px;
+    }
+}
 
 @media(max-width: 1300px) {
     .header-brand, .navbar-expand-sm .navbar-nav {
-        font-size: 28px;
+        font-size: 32px;
+        padding: 0 4px;
     }
 
     /* CONTACT PAGE */
@@ -529,6 +555,9 @@ footer h3 {
 
     .single-cats, .single-details {
         font-size: 10px;
+    }
+    .single-full-img, .single-auto-img {
+        height: 60vh;
     }
     /* PEOPLE PAGE */
     .person-name, .person-title {
@@ -573,6 +602,10 @@ footer h3 {
         padding: 30px 0 50px 0;
     }
 
+    .single-auto-img img {
+        max-width: none;
+    }
+
     /* PROJECT ARCHIVE */
     .right {
         padding-left: 0;
@@ -604,6 +637,10 @@ footer h3 {
     /* SINGLE */
     .container-single {
         padding: 40px 40px;
+    }
+
+    .single-full-img, .single-auto-img {
+        height: 55vh;
     }
 
     /* PEOPLE */
@@ -735,6 +772,7 @@ footer h3 {
         right: 0;
         font-size: 24px;
         line-height: 1.3;
+        padding: 0;
     }
 
     /* PROJECT ARCHIVE */
