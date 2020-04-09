@@ -58,8 +58,8 @@ li {
 }
 
 .header-brand, .navbar-expand-sm .navbar-nav {
-    font-size: 40px;
-    padding: 0 6px;
+    font-size: 36px;
+    padding: 0 5px;
 }
 
 /* .home-container .header-brand, .home-container .navbar-expand-sm .navbar-nav  {
@@ -216,6 +216,7 @@ button:focus {
 
 
 .showcase {
+    position: relative;
     height: 100vh;
     width: 100vw;
 }
@@ -280,7 +281,7 @@ button:focus {
     text-align: center;
     font-size: 16px;
     color: #4e4e4e;
-    margin: 100px 0;
+    margin: 100px 0 50px;
 }
 
 /* ===== SINGLE IMAGES ===== */
@@ -297,28 +298,39 @@ button:focus {
 }
 
 .single-full-img {
-    height: 75vh;
     width: 100%;
 }
 
 .single-full-img img {
     width: 100%;
-    height: 100%;
+    height: auto;
     /* max-height: 95vh; */
+    object-fit: cover;
+}
+
+.single-square-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.single-square-img img {
+    width: 66.7%;
+    height: auto;
+    /* max-height: 95vh;    */
     object-fit: cover;
 }
 
 .single-auto-img {
     width: 100%;
-    height: 75vh;
     display: flex;
     justify-content: center;
 }
 
 .single-auto-img img {
-    width: auto;
-    height: 100%;
-    max-width: 60%;
+    width: 50%;
+    height: auto;
+    /* max-height: 95vh;    */
     object-fit: cover;
 }
 
@@ -332,6 +344,7 @@ button:focus {
 .practice-page a:hover {
     color: #fff;
     text-decoration: none;
+    z-index: 10;
 }
 
 .practice-page .container {
@@ -364,22 +377,22 @@ button:focus {
 }
 
 .people-container {
-    max-width: 800px;
-    width: 65%;
+    width: 100%;
     /* margin: 0 auto; */
     padding: 130px 0 60px;
 }
 
 .person-block {
-    max-width: 800px;
+    max-width: 850px;
     display: flex;
-    align-items: center;
     padding-bottom: 30px;
+    margin: 0 auto;
 }
 
+
 .person-img img {
-    height: 438px;
-    width: 308px;
+    height: 350px;
+    width: 245px;
     object-fit: cover;
 }
 
@@ -424,7 +437,7 @@ button:focus {
 }
 
 .contact-content {
-    width: 1100px;
+    width: 850px;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -438,7 +451,7 @@ button:focus {
 
 .contact-content .map {
     width: 100%;
-    height: 615px;
+    height: 475px;
     margin-bottom: 30px;
     background-color: lightgray;
 }
@@ -541,24 +554,19 @@ footer h3 {
 
 /* ===== MEDIA QUERIES ===== */
 @media(max-width: 1600px) {
-    .contact-content {
+    /* .contact-content {
         width: 1000px;
     }
     
     .contact-content .map {
         height: 559px;
         margin-bottom: 30px;
-    }
+    } */
 }
 
 
 @media(max-width: 1500px) {
-    .header-brand, .navbar-expand-sm .navbar-nav {
-        font-size: 36px;
-        padding: 0 5px;
-    }
-
-    .container {
+     .container {
         max-width: 1200px
     }
 
@@ -568,13 +576,13 @@ footer h3 {
     .people-page footer .footer-container {
         max-width: 1200px;
     }
-
+/* 
     .person-img img {
         height: 350px;
         width: 245px;
         object-fit: cover;
-    }
-
+    } */
+/* 
     .contact-content {
         width: 850px;
     }
@@ -582,7 +590,7 @@ footer h3 {
     .contact-content .map {
         height: 475px;
         margin-bottom: 30px;
-    }
+    } */
 
 
 }
@@ -594,7 +602,7 @@ footer h3 {
     }
 
     /* CONTACT PAGE */
-    .contact-content {
+    /* .contact-content {
         width: 600px;
         margin-top: 30px;
     }
@@ -602,7 +610,7 @@ footer h3 {
     .contact-content .map {
         height: 335px;
         margin-bottom: 10px;
-    }
+    } */
     
 }
 
@@ -614,25 +622,25 @@ footer h3 {
     .single-cats, .single-details {
         font-size: 10px;
     }
-    .single-full-img, .single-auto-img {
+    /* .single-full-img, .single-auto-img {
         height: 60vh;
-    }
+    } */
     /* PEOPLE PAGE */
-    .person-name, .person-title {
+    /* .person-name, .person-title {
         font-size: 20px;
     }
     .person-info p {
         font-size: 14px;
-    }
+    } */
     /* CONTACT PAGE */
-    .contact-content {
+    /* .contact-content {
         width: 550px;
         margin-top: 30px;
     }
     
     .contact-content .map {
         height: 307px;
-    }
+    } */
 
     .contact-info h2 {
         font-size: 28px;
@@ -660,7 +668,7 @@ footer h3 {
         padding: 30px 0 50px 0;
     }
 
-    .single-auto-img img {
+    .single-square-img img {
         max-width: none;
     }
 
@@ -697,9 +705,9 @@ footer h3 {
         padding: 40px 40px;
     }
 
-    .single-full-img, .single-auto-img {
+    /* .single-full-img, .single-auto-img {
         height: 55vh;
-    }
+    } */
 
     /* PEOPLE */
     .people-container {
@@ -724,14 +732,14 @@ footer h3 {
     }
 
     /* CONTACT PAGE */
-    .contact-content {
+    /* .contact-content {
         width: 500px;
         margin-top: 60px;
     }
     
     .contact-content .map {
         height: 280px;
-    }
+    } */
 
     .contact-info h2 {
         font-size: 24px;
@@ -802,13 +810,13 @@ footer h3 {
 
 @media(max-width: 700px) {
         /* CONTACT PAGE */
-        .contact-content {
+        /* .contact-content {
             width: 460px;
         }
         
         .contact-content .map {
             height: 257px;
-        }
+        } */
 }
 
 @media(max-width: 600px){
