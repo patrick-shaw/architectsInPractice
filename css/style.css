@@ -462,23 +462,25 @@ button:focus {
     object-fit: cover;
 }
 
+.contact-address, .contact-social {
+    height: 190px;
+    display: grid;
+    align-content: space-between;
+}
+
+
 .contact-info h2 {
-    margin-bottom: 5px;
     font-size: 32px;
     text-transform: uppercase;
 }
 
 .contact-info h3 {
-    margin-bottom: 5px;
     font-size: 18px;
-}
-
-.contact-info h5 {
-    font-size: 8px;
+    margin-bottom: 5px;
 }
 
 .contact-info p {
-    font-size: 14px;
+    font-size: 9px;
     margin: 0;
 }
 
@@ -486,15 +488,9 @@ button:focus {
     text-decoration: underline;
 }
 
-.contact-social {
-    display: grid;
-    margin-left: 40px;
+.contact-email h3:nth-child(1){
+    padding-top: 3px;
 }
-
-.contact-social h5 {
-    align-self: flex-end;
-}
-
 
 
 /* ===== FOOTER ===== */
@@ -540,12 +536,19 @@ footer h2 {
 
 footer h3 {
     font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .footer-address, .footer-social {
     height: 160px;
     display: grid;
     align-content: space-between;
+}
+
+
+.footer-social p {
+    font-size: 9px;
+    margin: 14px 0 5px;
 }
 
 .footer-email h3:nth-child(1){
