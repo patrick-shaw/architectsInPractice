@@ -495,7 +495,7 @@ footer {
     justify-content: space-between;
 }
 
-.footer-container a {
+.footer-container a, .footer-container a:hover {
     color: #fff
 }
 
