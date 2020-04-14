@@ -461,11 +461,7 @@ button:focus {
 
 /* ===== FOOTER ===== */
 .single-page footer,
-.project-page footer {
-    background-color: #ff6b6b;
-    color: #fff;
-}
-
+.project-page footer,
 .practice-page footer,
 .people-page footer {
     background-color: #4e4e4e;
