@@ -1,5 +1,7 @@
 const homeCont = document.getElementById('home-container');
 const homeTitle = document.getElementById('home-title');
+const randNum = (Math.ceil(Math.random() * 3));
+
 
 function homeTitleSelect(num) {
     if (num === 1) {
@@ -17,13 +19,17 @@ function homeTitleSelect(num) {
     }
 }
 
-window.onload = () => {
-    const homeProject = document.createElement('img');
-    const projectLink = document.createElement('a');
+const homeProject = document.createElement('img');
+const projectLink = document.createElement('a');
 
-    const randNum = (Math.ceil(Math.random() * 3));
+function homeImgSelect(x) {
 
-    homeProject.src = `img/home-img/project-${randNum}.jpg`;
+    if (x.matches) {
+        homeProject.src = `img/home-img/laptop/project-${randNum}.jpg`;
+
+    } else {
+        homeProject.src = `img/home-img/desktop/project-${randNum}.jpg`;
+    }
 
     homeTitleSelect(randNum);
 
@@ -33,3 +39,23 @@ window.onload = () => {
     homeCont.appendChild(projectLink);
     homeCont.appendChild(homeProject);
 }
+
+function homeImgScreenChange(x) {
+    if (x.matches) {
+        homeProject.src = `img/home-img/laptop/project-${randNum}.jpg`;
+
+    } else {
+        homeProject.src = `img/home-img/desktop/project-${randNum}.jpg`;
+    }
+}
+
+
+const x = window.matchMedia("(max-width: 1600px)")
+
+homeImgSelect(x);
+
+x.addListener(homeImgScreenChange);
+
+
+
+

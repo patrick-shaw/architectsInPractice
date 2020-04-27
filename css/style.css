@@ -149,9 +149,6 @@ button:focus {
 }
 
 
-
-
-
 /* -----PROJECT ARCHIVE----- */
 .project-page .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(78, 78, 78, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -171,6 +168,16 @@ button:focus {
 
 .project-pb {
     padding-bottom: 100px;
+}
+
+.proj-img {
+    opacity: 0;
+    transition: all 0.8s ease-in;
+}
+
+.proj-img.visible {
+    opacity: 1;
+    transform: none;
 }
 
 .proj-img img {
@@ -216,15 +223,10 @@ button:focus {
 
 
 .showcase {
+    background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
     position: relative;
     height: 100vh;
     width: 100vw;
-}
-
-.showcase img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .proj-title {
@@ -431,6 +433,19 @@ button:focus {
     padding: 0 50px;
     overflow: hidden;
     background-color: #ff6b6b;
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.contact-width-container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
     position: relative;
     display: flex;
     justify-content: center;
@@ -438,7 +453,7 @@ button:focus {
 }
 
 .contact-content {
-    width: 778px;
+    width: 100%;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -448,7 +463,7 @@ button:focus {
 
 .contact-content .map {
     width: 100%;
-    height: 414px;
+    height: auto;
     margin-bottom: 30px;
     background-color: lightgray;
 }
@@ -546,6 +561,10 @@ footer p {
         height: 559px;
         margin-bottom: 30px;
     } */
+
+    .showcase {
+        background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_1440x800.jpg) center center/cover no-repeat;
+    }
 }
 
 

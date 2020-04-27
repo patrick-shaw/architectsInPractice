@@ -4,8 +4,19 @@ $('#year').text(new Date().getFullYear());
 // SCROLL MAGIC IMAGE FADE IN
 const controller = new ScrollMagic.Controller();
 const images = document.querySelectorAll('.img-mb');
+const projImg = document.querySelectorAll('.proj-img');
 
 images.forEach(image => {
+    new ScrollMagic.Scene({
+        triggerElement: image,
+        triggerHook: 0.9,
+        offset: 50
+    })
+        .setClassToggle(image, 'visible')
+        .addTo(controller);
+})
+
+projImg.forEach(image => {
     new ScrollMagic.Scene({
         triggerElement: image,
         triggerHook: 0.9,
