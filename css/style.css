@@ -455,6 +455,7 @@ button:focus {
 .contact-content {
     width: 100%;
     margin-top: 60px;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
 }
