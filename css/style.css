@@ -376,7 +376,7 @@ button:focus {
 }
 
 .people-page {
-    background-color: #ffefef;
+    background-color: #fff;
 }
 
 .people-container {
@@ -466,7 +466,7 @@ button:focus {
 .contact-content .map {
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     background-color: lightgray;
 }
 
