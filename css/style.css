@@ -430,7 +430,7 @@ button:focus {
 .contact-page,
 .contact-page a,
 .contact-page a:hover {
-    color: #fff;
+    color: #4e4e4e;
     text-decoration: none;
 }
 
@@ -439,7 +439,7 @@ button:focus {
     width: 100%;
     /* padding: 0 50px; */
     overflow: hidden;
-    background-color: #ff6b6b;
+    background-color: #ffefef;
 }
 
 .contact-container {
@@ -523,6 +523,10 @@ footer {
     color: #fff
 }
 
+.contact-container .footer-container a, .footer-container a:hover {
+    color: #4e4e4e
+}
+
 footer h2 {
     font-size: 32px;
     text-transform: uppercase;
@@ -562,15 +566,6 @@ footer p {
 
 /* ===== MEDIA QUERIES ===== */
 @media(max-width: 1600px) {
-    /* .contact-content {
-        width: 1000px;
-    }
-    
-    .contact-content .map {
-        height: 559px;
-        margin-bottom: 30px;
-    } */
-
     .showcase {
         background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_1440x800.jpg) center center/cover no-repeat;
     }
@@ -578,56 +573,69 @@ footer p {
 
 
 @media(max-width: 1500px) {
-     .container {
+     /* .container {
         max-width: 1200px
+    } */
+     .container {
+         padding-top: 150px;
+        max-width: 1000px
     }
 
     .contact-container {
-        max-width: 1200px;
+        max-width: 900px;
     }
 
     .single-page footer .footer-container,
     .project-page footer .footer-container,
     .practice-page footer .footer-container,
     .people-page footer .footer-container {
-        max-width: 1200px;
+        max-width: 1000px;
     }
-/* 
-    .person-img img {
-        height: 350px;
-        width: 245px;
-        object-fit: cover;
-    } */
-/* 
+
     .contact-content {
-        width: 850px;
+        margin-top: 30px;
+    }
+
+    .contact-container footer h2 {
+        font-size: 28px;
     }
     
-    .contact-content .map {
-        height: 475px;
-        margin-bottom: 30px;
-    } */
+    .contact-container footer h3 {
+        font-size: 14px;
+    }
+    
+    .contact-container footer p {
+        font-size: 9px;
+    }
 
+    .contact-container .contact-address, .contact-container .contact-social-container {
+        height: 120px; }
+
+    .contact-content .map {
+        margin-bottom: 10px;
+    }
 
 }
 
 @media(max-width: 1300px) {
     .header-brand, .navbar-expand-sm .navbar-nav {
-        font-size: 32px;
+        font-size: 28px;
         padding: 0 4px;
     }
 
-    /* CONTACT PAGE */
-    /* .contact-content {
-        width: 600px;
-        margin-top: 30px;
+    .proj-desc h2 {
+        font-size: 28px;
     }
-    
-    .contact-content .map {
-        height: 335px;
-        margin-bottom: 10px;
-    } */
-    
+
+    .contact-address h3 {
+        margin-bottom: 2px;
+    }
+
+    .contact-content {
+        margin-top: 15px;
+    }
+
+
 }
 
 @media(max-width: 1200px) {
@@ -638,28 +646,10 @@ footer p {
     .single-cats, .single-details {
         font-size: 10px;
     }
-    /* .single-full-img, .single-auto-img {
-        height: 60vh;
-    } */
-    /* PEOPLE PAGE */
-    /* .person-name, .person-title {
-        font-size: 20px;
-    }
-    .person-info p {
-        font-size: 14px;
-    } */
-    /* CONTACT PAGE */
-    /* .contact-content {
-        width: 550px;
-        margin-top: 30px;
-    }
-    
-    .contact-content .map {
-        height: 307px;
-    } */
 
     .contact-info h2 {
         font-size: 28px;
+        margin-bottom: 0px;
     }
     
     .contact-info h3 {
@@ -721,9 +711,7 @@ footer p {
         padding: 40px 40px;
     }
 
-    /* .single-full-img, .single-auto-img {
-        height: 55vh;
-    } */
+
 
     /* PEOPLE */
     .people-container {
