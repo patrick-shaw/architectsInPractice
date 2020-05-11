@@ -577,6 +577,10 @@ footer p {
         max-width: 1200px
     }
 
+    .contact-container {
+        max-width: 1200px;
+    }
+
     .single-page footer .footer-container,
     .project-page footer .footer-container,
     .practice-page footer .footer-container,
@@ -584,28 +588,7 @@ footer p {
         max-width: 1200px;
     }
 
-    .contact-content {
-        margin-top: 30px;
-    }
-
-    .contact-container footer h2 {
-        font-size: 28px;
-    }
     
-    .contact-container footer h3 {
-        font-size: 14px;
-    }
-    
-    .contact-container footer p {
-        font-size: 9px;
-    }
-
-    .contact-container .contact-address, .contact-container .contact-social-container {
-        height: 120px; }
-
-    .contact-content .map {
-        margin-bottom: 10px;
-    }
 
 }
 
@@ -633,6 +616,29 @@ footer p {
 
     .proj-desc h2 {
         font-size: 28px;
+    }
+
+    .contact-content {
+        margin-top: 30px;
+    }
+
+    .contact-container footer h2 {
+        font-size: 28px;
+    }
+    
+    .contact-container footer h3 {
+        font-size: 14px;
+    }
+    
+    .contact-container footer p {
+        font-size: 9px;
+    }
+
+    .contact-container .contact-address, .contact-container .contact-social-container {
+        height: 120px; }
+
+    .contact-content .map {
+        margin-bottom: 10px;
     }
 
     .contact-address h3 {
