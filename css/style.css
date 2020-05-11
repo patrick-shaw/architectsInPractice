@@ -573,23 +573,15 @@ footer p {
 
 
 @media(max-width: 1500px) {
-     /* .container {
-        max-width: 1200px
-    } */
      .container {
-         padding-top: 150px;
-        max-width: 1000px
-    }
-
-    .contact-container {
-        max-width: 900px;
+        max-width: 1200px
     }
 
     .single-page footer .footer-container,
     .project-page footer .footer-container,
     .practice-page footer .footer-container,
     .people-page footer .footer-container {
-        max-width: 1000px;
+        max-width: 1200px;
     }
 
     .contact-content {
@@ -621,6 +613,22 @@ footer p {
     .header-brand, .navbar-expand-sm .navbar-nav {
         font-size: 28px;
         padding: 0 4px;
+    }
+
+    .container {
+        padding-top: 150px;
+       max-width: 1000px
+   }
+
+   .contact-container {
+       max-width: 900px;
+   }
+
+   .single-page footer .footer-container,
+    .project-page footer .footer-container,
+    .practice-page footer .footer-container,
+    .people-page footer .footer-container {
+        max-width: 1000px;
     }
 
     .proj-desc h2 {
