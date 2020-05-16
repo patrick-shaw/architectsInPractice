@@ -20,9 +20,6 @@ html {
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     height: 100%;
     font-family: apRegular;
     overflow-x: hidden;
@@ -41,14 +38,15 @@ li {
     list-style: none;
 }
 
+button:focus {
+    outline: none;
+}
+
 .italic {
     font-style: italic;
 }
 
 /* -----HEADER----- */
-
-
-
 .header-brand {
     position: absolute;
     top: 10px;
@@ -62,32 +60,17 @@ li {
     padding: 0 5px;
 }
 
-/* .home-container .header-brand, .home-container .navbar-expand-sm .navbar-nav  {
-    font-size: 40px;
-    padding: 0 5px;
-}
-
-.project-page .header-brand, .project-page .navbar-expand-sm .navbar-nav {
-    font-size: 40px;
-    padding: 0 5px;
-} */
-
 .navbar-expand-sm .navbar-nav {
     position: absolute;
     top: 10px;
     right: 10px;
     line-height: 1.2;
     flex-direction: column;
-
 }
 
 .header-nav li {
     text-align: right;
     padding-bottom: 5px;
-}
-
-button:focus {
-    outline: none;
 }
 
 .navbar {
@@ -500,12 +483,6 @@ button:focus {
     max-width: 1400px;
     padding: 60px 50px;
 }
-/* PEOPLE PAGE FOOTER */
-/* .people-page footer .footer-container {
-    max-width: 800px;
-    padding: 60px 0;
-    width: 65%;
-} */
 
 
 footer {
@@ -646,13 +623,17 @@ footer p {
     }
 
     .contact-content {
-        margin-top: 15px;
+        margin-top: 0;
     }
 
 
 }
 
 @media(max-width: 1200px) {
+    .header-brand, .navbar-expand-sm .navbar-nav {
+        font-size: 24px;
+    }
+
     .description {
         font-size: 12px;
     }
@@ -661,23 +642,53 @@ footer p {
         font-size: 10px;
     }
 
-    .contact-info h2 {
-        font-size: 28px;
-        margin-bottom: 0px;
-    }
     
-    .contact-info h3 {
-        font-size: 15px;
+    .container {
+        padding-top: 120px;
+       max-width: 900px
+   }
+
+   .contact-container {
+       max-width: 700px;
+   }
+
+   .contact-content {
+    margin-top: 30px;
     }
-    
-    .contact-info h5 {
-        font-size: 8px;
+
+    .contact-container footer h2 {
+        font-size: 24px;
+        margin-bottom: 0;
     }
-    
-    .contact-info p {
-        font-size: 14px;
-        margin: 0;
+
+    .contact-container footer h3 {
+        font-size: 10px;
     }
+
+    .contact-container footer .contact-address h3 {
+        margin-bottom: 0;
+    }
+
+    .contact-container footer p {
+        font-size: 7px;
+    }
+
+    .contact-container .contact-address, .contact-container .contact-social-container {
+        height: 120px; }
+
+    .contact-content .map {
+        margin-bottom: 10px;
+    }
+
+    .contact-address h3 {
+        margin-bottom: 2px;
+    }
+
+    .contact-content {
+        margin-top: 15px;
+    }
+
+   
 }
 @media(max-width: 991px) {
     /* SINGLE */
