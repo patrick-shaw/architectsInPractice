@@ -20,7 +20,7 @@ projImg.forEach(image => {
     new ScrollMagic.Scene({
         triggerElement: image,
         triggerHook: 0.9,
-        offset: 50
+        offset: 0
     })
         .setClassToggle(image, 'visible')
         .addTo(controller);

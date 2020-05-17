@@ -500,7 +500,7 @@ footer {
     color: #fff
 }
 
-.contact-container .footer-container a, .footer-container a:hover {
+.contact-container .footer-container a {
     color: #4e4e4e
 }
 
@@ -541,6 +541,16 @@ footer p {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* ===== MEDIA QUERIES ===== */
 @media(max-width: 1600px) {
     .showcase {
@@ -549,7 +559,7 @@ footer p {
 }
 
 
-@media(max-width: 1500px) {
+/* @media(max-width: 1500px) {
      .container {
         max-width: 1200px
     }
@@ -564,10 +574,127 @@ footer p {
     .people-page footer .footer-container {
         max-width: 1200px;
     }
+} */
+/* DESKTOP 1920 x 950 */
+
+/* MEDIUM LAPTOP 1440 x 800 */
+@media(max-width: 1500px) {
+    .container {
+        max-width: 1200px
+    }
+
+    .contact-container {
+        max-width: 1200px;
+    }
+
+    .single-page footer .footer-container,
+    .project-page footer .footer-container,
+    .practice-page footer .footer-container,
+    .people-page footer .footer-container {
+        max-width: 1200px;
+    }
+}
+
+
+/* SMALL LAPTOP 1366 x 640 */
+@media(max-width: 1400px) {
+    .header-brand, .navbar-expand-sm .navbar-nav {
+        font-size: 30px;
+        padding: 0 4px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+    .single-page footer .footer-container,
+    .project-page footer .footer-container,
+    .practice-page footer .footer-container,
+    .people-page footer .footer-container {
+        max-width: 1000px;
+    }
+    .proj-desc h2 {
+        font-size: 28px;
+    }
+    .proj-desc h3 {
+        font-size: 14px;
+    }
+
+    .contact-container {
+        max-width: 1000px;
+    }
+ 
+    .contact-content {
+     margin-top: 0;
+     }
+ 
+     footer h2 {
+         font-size: 28px;
+         margin-bottom: 0;
+     }
+ 
+     footer h3 {
+         font-size: 12px;
+     }
+ 
+     footer .contact-address h3 {
+         margin-bottom: 0;
+     }
+ 
+     footer p {
+         font-size: 9px;
+     }
+ 
+     .contact-address, .contact-social-container {
+         height: 120px; }
+ 
+     .contact-content .map {
+         margin-bottom: 10px;
+     }
+ 
+     .contact-address h3 {
+         margin-bottom: 2px;
+     }
+}
+
+/* 14 INCH NOTEBOOK 1280 x 580 */
+@media(max-width: 1300px) {
+    .header-brand, .navbar-expand-sm .navbar-nav {
+        font-size: 28px;
+        padding: 0 4px;
+    }
+
+    .container {
+        padding-top: 150px;   
+    }
 
     
-
 }
+
+
+
+
+
+
+/* IANS LAPTOP
+@media(max-width: 1400px) and (max-height: 630px) {
+    .header-brand, .navbar-expand-sm .navbar-nav {
+        font-size: 30px;
+        padding: 0 4px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+    .proj-desc h2 {
+        font-size: 28px;
+    }
+    .proj-desc h3 {
+        font-size: 14px;
+    }
+
+
+} */
+
+
+/* 
 
 @media(max-width: 1300px) {
     .header-brand, .navbar-expand-sm .navbar-nav {
@@ -688,8 +815,11 @@ footer p {
         margin-top: 15px;
     }
 
-   
-}
+} */
+
+
+
+
 @media(max-width: 991px) {
     /* SINGLE */
     .single-list {
@@ -718,6 +848,11 @@ footer p {
         font-size: 14px;
     }
 }
+
+
+
+
+
 
 @media(max-width: 900px) {
     /* HEADER */
@@ -837,16 +972,6 @@ footer p {
 
 }
 
-@media(max-width: 700px) {
-        /* CONTACT PAGE */
-        /* .contact-content {
-            width: 460px;
-        }
-        
-        .contact-content .map {
-            height: 257px;
-        } */
-}
 
 @media(max-width: 600px){
     /* PEOPLE */
