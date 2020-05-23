@@ -551,34 +551,14 @@ footer p {
 
 
 
-/* ===== MEDIA QUERIES ===== */
-@media(max-width: 1600px) {
-    .showcase {
-        background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_1440x800.jpg) center center/cover no-repeat;
-    }
-}
 
-
-/* @media(max-width: 1500px) {
-     .container {
-        max-width: 1200px
-    }
-
-    .contact-container {
-        max-width: 1200px;
-    }
-
-    .single-page footer .footer-container,
-    .project-page footer .footer-container,
-    .practice-page footer .footer-container,
-    .people-page footer .footer-container {
-        max-width: 1200px;
-    }
-} */
 /* DESKTOP 1920 x 950 */
 
 /* MEDIUM LAPTOP 1440 x 800 */
 @media(max-width: 1500px) {
+    .showcase {
+        background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_1440x800.jpg) center center/cover no-repeat;
+    }
     .container {
         max-width: 1200px
     }
@@ -598,6 +578,9 @@ footer p {
 
 /* SMALL LAPTOP 1366 x 640 */
 @media(max-width: 1400px) {
+    .showcase {
+        background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+    }
     .header-brand, .navbar-expand-sm .navbar-nav {
         font-size: 30px;
         padding: 0 4px;
@@ -616,6 +599,14 @@ footer p {
     }
     .proj-desc h3 {
         font-size: 14px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .single-cats, .single-details {
+        font-size: 12px;
     }
 
     .contact-container {
