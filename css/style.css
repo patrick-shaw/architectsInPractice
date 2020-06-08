@@ -146,7 +146,7 @@ button:focus {
 
 .container {
     max-width: 1400px;
-    padding: 200px 50px 50px;
+    padding: 240px 50px 50px;
 }
 
 .project-pb {
@@ -407,7 +407,7 @@ button:focus {
 
 /* ===== CONTACT PAGE ===== */
 .contact-page .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(78, 78, 78, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .contact-page .navbar-light .navbar-brand,
 .contact-page,
@@ -578,6 +578,10 @@ footer p {
 
 /* SMALL LAPTOP 1366 x 640 */
 @media(max-width: 1400px) {
+    .container {
+        padding-top: 200px;
+    }
+
     .showcase {
         background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
     }
@@ -617,7 +621,7 @@ footer p {
      margin-top: 0;
      }
  
-     footer h2 {
+     /* footer h2 {
          font-size: 28px;
          margin-bottom: 0;
      }
@@ -631,18 +635,15 @@ footer p {
      }
  
      footer p {
-         font-size: 9px;
+         font-size: 7px;
      }
  
      .contact-address, .contact-social-container {
-         height: 120px; }
+         height: 120px;
+     } */
  
      .contact-content .map {
          margin-bottom: 10px;
-     }
- 
-     .contact-address h3 {
-         margin-bottom: 2px;
      }
 }
 
@@ -656,14 +657,193 @@ footer p {
     .container {
         padding-top: 150px;   
     }
+}
 
+
+/* IPAD PORTRAIT */
+@media(max-width: 769px) {
+    .container {
+        padding: 200px 15px 50px;
+    }
+    .right {
+        padding-left: 0;
+    }
+    .left {
+        padding-right: 0;
+    }
+    .project-pb {
+        padding-bottom: 80px;
+    }
+
+
+    .single-page .container {
+        padding-top: 40px;
+    }
+    .single-title h2 {
+        font-size: 28px;
+    }
+    .single-desc {
+        padding-bottom: 80px;
+    }
+    .description {
+        padding-bottom: 40px;
+    }
+
+    .practice-page .container {
+        padding-bottom: 100px;
+    }
+    .practice-desc h3 {
+        padding-bottom: 10px;
+    }
+
+    .contact-container {
+        padding: 0 15px;
+    }
+    .contact-content {
+        padding: 30px 0 0;
+    }
+    .contact-page footer h2 {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    .contact-page footer h3 {
+        font-size: 18px;
+    }
+
+    .contact-page footer .contact-address h3 {
+        margin-bottom: 5px;
+    }
+
+    .contact-page footer p {
+        font-size: 9px;
+    }
+
+    .contact-page .contact-address, .contact-social-container {
+        height: 160px; }
+
+    .contact-page .contact-content .map {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* MOBILE */
+@media(max-width: 576px) {
+    .navbar-expand-sm .navbar-nav {
+        position: relative;
+        top: 35px;
+        right: 0;
+        font-size: 24px;
+        line-height: 1.3;
+        padding: 0;
+        z-index: 10;
+    }
+
+    .container {
+        padding-top: 160px;
+    }
+
+    .right {
+        padding-left: 15px;
+    }
+    .left {
+        padding-right: 15px;
+        align-items: flex-start;
+    }
+    .proj-img {
+        padding-bottom: 5px;
+    }
+    .project-pb {
+        padding-bottom: 70px;
+    }
+
+
+    .title {
+        font-size: 20px;
+    }
+    .img-mb {
+        margin-bottom: 40px;
+    }
+
+
+    .practice-page .container {
+        padding-bottom: 70px;
+    }
+
+
+    .person-block {
+        flex-direction: column;
+    }
+    .person-img {
+        margin-bottom: 10px;
+    }
+
+    .person-info {
+        margin-left: 0;
+    }
+
+
+    footer .footer-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-address, .contact-social-container {
+        display: block;
+        height: auto;
+    }
     
+    footer h2 {
+        margin-bottom: 10px;
+    }
+
+    .footer-container .contact-address h3,
+    .contact-address h3:nth-of-type(3) {
+        margin: 0 0 5px;
+    }
+
+    .contact-email h3:nth-of-type(1), 
+    .footer-registered {
+        margin: 0 0 8px;
+    }
+
+    .footer-registered {
+        margin-bottom: 18px;
+    }
+
+    .footer-rights {
+        margin-top: 18px;
+    }
+
+    .contact-content {
+        padding-top: 50px;
+    }
+
+    .contact-page .contact-address, .contact-social-container {
+        height: auto; 
+    }
+
+    .contact-page footer h2 {
+        font-size: 28px;
+    }
+
+    .contact-page footer h3 {
+        font-size: 12px;
+    }
+
+    .contact-page footer p {
+        font-size: 7px;
+    }
+
+
 }
 
 
 
-
-
+/* 
 
 /* IANS LAPTOP
 @media(max-width: 1400px) and (max-height: 630px) {
@@ -806,13 +986,13 @@ footer p {
         margin-top: 15px;
     }
 
-} */
+} 
 
 
 
 
 @media(max-width: 991px) {
-    /* SINGLE */
+    /* SINGLE 
     .single-list {
         margin-top: 20px;
     }
@@ -824,7 +1004,7 @@ footer p {
         max-width: none;
     }
 
-    /* PROJECT ARCHIVE */
+    /* PROJECT ARCHIVE 
     .right {
         padding-left: 0;
     }
@@ -846,7 +1026,7 @@ footer p {
 
 
 @media(max-width: 900px) {
-    /* HEADER */
+    /* HEADER 
     .header-brand, .navbar-expand-sm .navbar-nav {
         font-size: 24px;
     }
@@ -857,14 +1037,13 @@ footer p {
         padding: 200px 30px 50px;
     }
 
-    /* SINGLE */
+    /* SINGLE 
     .container-single {
         padding: 40px 40px;
     }
 
 
-
-    /* PEOPLE */
+    /* PEOPLE 
     .people-container {
         width: 100%;
         padding: 130px 40px 80px;
@@ -894,7 +1073,7 @@ footer p {
     
     .contact-content .map {
         height: 280px;
-    } */
+    } 
 
     .contact-info h2 {
         font-size: 24px;
@@ -914,7 +1093,7 @@ footer p {
     }
     
 
-    /* FOOTER */
+    /* FOOTER 
     .project-page footer .footer-container {
         padding: 60px 30px;
     }
@@ -941,7 +1120,7 @@ footer p {
         padding: 200px 20px 50px;
     }
 
-    /* PROJECT ARCHIVE */
+    /* PROJECT ARCHIVE 
     .project-pb {
         padding-bottom: 60px;
     }
@@ -953,7 +1132,7 @@ footer p {
         font-size: 12px;
     }
 
-    /* FOOTER */
+    /* FOOTER 
     .project-page footer .footer-container {
         padding: 60px 20px;
     }
@@ -965,13 +1144,13 @@ footer p {
 
 
 @media(max-width: 600px){
-    /* PEOPLE */
+    /* PEOPLE 
     .people-container {
         padding: 130px 100px 80px;
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
     }
-    /* FOOTER */
+    /* FOOTER 
     footer .footer-container {
         padding: 50px 30px;
     }
@@ -989,7 +1168,7 @@ footer p {
         padding: 0;
     }
 
-    /* PROJECT ARCHIVE */
+    /* PROJECT ARCHIVE 
     .right {
         padding-left: 15px;
     }
@@ -1007,7 +1186,7 @@ footer p {
         font-size: 14px;
     }
 
-    /* CONTACT */
+    /* CONTACT 
     .contact-page {
         padding: 0;
     }
@@ -1015,7 +1194,7 @@ footer p {
 }
 
 @media(max-width: 500px) {
-    /* SINGLE */
+    /* SINGLE 
     .container-single {
         padding: 40px 20px;
     }
@@ -1023,13 +1202,13 @@ footer p {
         margin-bottom: 50px;
     }
 
-    /* PEOPLE */
+    /* PEOPLE *
     .people-container {
         padding: 130px 60px 80px;
     }
 
 
-    /* FOOTER */
+    /* FOOTER *
     footer .footer-container {
         flex-direction: column;
         justify-content: space-between;
@@ -1052,17 +1231,17 @@ footer p {
     .container {
         padding: 200px 10px 50px;
     }
-    /* SINGLE */
+    /* SINGLE *
     .container-single {
         padding: 40px 10px;
     }
 
-    /* PEOPLE */
+    /* PEOPLE *
     .people-container {
         padding: 80px 30px;
     }
 
-    /* CONTACT */
+    /* CONTACT *
     .contact-info {
         text-align: center;
         flex-direction: column;
@@ -1074,8 +1253,10 @@ footer p {
 }
 
 @media(max-width: 370px) {
-    /* CONTACT */
+    /* CONTACT *
     .contact-content .map {
         height: 220px;
     }
 }
+
+  */
