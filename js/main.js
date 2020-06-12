@@ -1,6 +1,44 @@
 //get the current year of the copyright
 $('#year').text(new Date().getFullYear());
 
+//MOBILE NAVBAR
+
+const navbar = document.querySelector('header nav');
+const menuToggle = document.querySelectorAll('#menu-toggle');
+let togCount = true
+const toggleMenu = () => {
+    if (togCount) {
+        navbar.style.display = 'block'
+        navbar.style.transform = 'translateY(100vh)';
+        document.body.style.overflowY = 'hidden';
+        togCount = false;
+    } else {
+        navbar.style.transform = 'translateY(-100vh)';
+        document.body.style.overflowY = 'auto';
+        togCount = true;
+    }
+}
+
+var x = window.matchMedia("(max-width: 576px)")
+isMobileMenu(x)
+
+window.addEventListener('resize', () => {
+    isMobileMenu(x);
+})
+
+
+function isMobileMenu(x) {
+    if (x.matches) { // If media query matches
+        navbar.style.top = '-100vh';
+        menuToggle.forEach((tog) => {
+            tog.addEventListener('click', toggleMenu);
+        })
+    } else {
+        navbar.style.top = '10px';
+        navbar.style.transform = 'translateY(0)';
+    }
+}
+
 // SCROLL MAGIC IMAGE FADE IN
 const controller = new ScrollMagic.Controller();
 const images = document.querySelectorAll('.img-mb');
