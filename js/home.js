@@ -83,9 +83,8 @@ window.addEventListener('resize', () => {
 
 
 function isMobileMenu(y) {
-    if (x.matches) { // If media query matches
+    if (y.matches) { // If media query matches
         navbar.style.top = '-100vh';
-        console.log('test');
         menuToggle.forEach((tog) => {
             tog.addEventListener('click', toggleMenu);
         })
