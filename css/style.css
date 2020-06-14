@@ -593,6 +593,11 @@ footer p {
     .container {
         padding-top: 150px;   
     }
+
+    .map img {
+        height: 300px;
+    }
+
 }
 
 
@@ -645,6 +650,9 @@ footer p {
     }
     .contact-content {
         padding: 30px 0 0;
+    }
+    .map img {
+        height: 100%;
     }
 
     .contact-page .contact-content .map {
