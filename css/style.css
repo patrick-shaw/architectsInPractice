@@ -544,9 +544,22 @@ footer p {
 
 /* MEDIUM LAPTOP 1440 x 800 */
 @media(max-width: 1500px) {
-    .showcase {
-        background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_1440x800.jpg) center center/cover no-repeat;
+    .showcase.reardon {
+        background: url(../img/1_ReardonStreet/Project_MainImage/2_Laptop/ReardonSt_North_ProjectMain_1440x800.jpg) center center/cover no-repeat;
     }
+    .showcase.chimney {
+        background: url(../img/2_ChimneyTerrace/Project_MainImage/2_Laptop/ChimneyTerrace1_ProjectMain_1440x800.jpg) center center/cover no-repeat;
+    }
+    .showcase.gatehouse {
+        background: url(../img/3_GatehouseSchool/Project_MainImage/2_Laptop/GatehouseSchool_ProjectMain_1440x800.jpg) center center/cover no-repeat;
+    }
+    .showcase.ossory {
+        background: url(../img/4_Ossory/Project_MainImage/2_Laptop/Ossory_ProjectMain_1440x800.jpg) center center/cover no-repeat;
+    }
+    .showcase.america {
+        background: url(../img/5_AmericaSquare/Project_MainImage/2_Laptop/AmericaSquare_ProjectMain_1440x800.jpg) center center/cover no-repeat;
+    }
+
     .container {
         max-width: 1200px
     }
@@ -564,8 +577,20 @@ footer p {
         padding-top: 200px;
     }
 
-    .showcase {
-        background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+    .showcase.reardon {
+    background: url(../img/1_ReardonStreet/Project_MainImage/1_Desktop/ReardonSt_North_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+    }
+    .showcase.chimney {
+        background: url(../img/2_ChimneyTerrace/Project_MainImage/1_Desktop/ChimneyTerrace1_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+    }
+    .showcase.gatehouse {
+        background: url(../img/3_GatehouseSchool/Project_MainImage/1_Desktop/GatehouseSchool_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+    }
+    .showcase.ossory {
+        background: url(../img/4_Ossory/Project_MainImage/1_Desktop/Ossory_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+    }
+    .showcase.america {
+        background: url(../img/5_AmericaSquare/Project_MainImage/1_Desktop/AmericaSquare_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
     }
 
     .brand, .nav-list-item {
@@ -632,6 +657,22 @@ footer p {
 @media(max-width: 769px) {
     .container {
         padding: 200px 15px 0;
+    }
+
+    .showcase.reardon {
+        background: url(../img/1_ReardonStreet/Project_MainImage/3_Tablet/ReardonSt_North_ProjectMain_1536x2040.jpg) center center/cover no-repeat;
+    }
+    .showcase.chimney {
+        background: url(../img/2_ChimneyTerrace/Project_MainImage/3_Tablet/ChimneyTerrace1_ProjectMain_1536x2040.jpg) center center/cover no-repeat;
+    }
+    .showcase.gatehouse {
+        background: url(../img/3_GatehouseSchool/Project_MainImage/3_Tablet/GatehouseSchool_ProjectMain_1536x2040.jpg) center center/cover no-repeat;
+    }
+    .showcase.ossory {
+        background: url(../img/4_Ossory/Project_MainImage/3_Tablet/Ossory_ProjectMain_1536x2040.jpg) center center/cover no-repeat;
+    }
+    .showcase.america {
+        background: url(../img/5_AmericaSquare/Project_MainImage/3_Tablet/AmericaSquare_ProjectMain_1536x2040.jpg) center center/cover no-repeat;
     }
 
     /* Page footer distance */
@@ -728,6 +769,22 @@ footer p {
 
     .container {
         padding: 130px 15px 0;
+    }
+
+    .showcase.reardon {
+        background: url(../img/1_ReardonStreet/Project_MainImage/4_Mobile/ReardonSt_North_ProjectMain_750x1192.jpg) center center/cover no-repeat;
+    }
+    .showcase.chimney {
+        background: url(../img/2_ChimneyTerrace/Project_MainImage/4_Mobile/ChimneyTerrace1_ProjectMain_750x1192.jpg) center center/cover no-repeat;
+    }
+    .showcase.gatehouse {
+        background: url(../img/3_GatehouseSchool/Project_MainImage/4_Mobile/GatehouseSchool_ProjectMain_750x1192.jpg) center center/cover no-repeat;
+    }
+    .showcase.ossory {
+        background: url(../img/4_Ossory/Project_MainImage/4_Mobile/Ossory_ProjectMain_750x1192.jpg) center center/cover no-repeat;
+    }
+    .showcase.america {
+        background: url(../img/5_AmericaSquare/Project_MainImage/4_Mobile/AmericaSquare_ProjectMain_750x1192.jpg) center center/cover no-repeat;
     }
 
     /* Page footer distance */
