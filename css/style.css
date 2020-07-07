@@ -91,6 +91,11 @@ header nav {
     float: right;
 }
 
+header.dark a,
+header.dark a:hover {
+    color: #4e4e4e;
+}
+
 
 /* -----HOMEPAGE----- */
 /* .home-container .navbar-light .navbar-toggler-icon {
@@ -213,6 +218,10 @@ header nav {
 }
 .showcase.america {
     background: url(../img/5_AmericaSquare/Project_MainImage/1_Desktop/AmericaSquare_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+}
+
+.showcase.ossory .title {
+    color: #4e4e4e;
 }
 
 .proj-title {
