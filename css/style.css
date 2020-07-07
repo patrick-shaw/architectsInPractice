@@ -194,10 +194,25 @@ header nav {
 }
 
 .showcase {
-    background: url(../img/Gatehouse-School-Images/full-screen/GatehouseSchool_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
     position: relative;
     height: 100vh;
     width: 100vw;
+}
+
+.showcase.reardon {
+    background: url(../img/1_ReardonStreet/Project_MainImage/1_Desktop/ReardonSt_North_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+}
+.showcase.chimney {
+    background: url(../img/2_ChimneyTerrace/Project_MainImage/1_Desktop/ChimneyTerrace1_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+}
+.showcase.gatehouse {
+    background: url(../img/3_GatehouseSchool/Project_MainImage/1_Desktop/GatehouseSchool_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+}
+.showcase.ossory {
+    background: url(../img/4_Ossory/Project_MainImage/1_Desktop/Ossory_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
+}
+.showcase.america {
+    background: url(../img/5_AmericaSquare/Project_MainImage/1_Desktop/AmericaSquare_ProjectMain_3000x1500.jpg) center center/cover no-repeat;
 }
 
 .proj-title {
@@ -224,13 +239,17 @@ header nav {
 }
 
 .single-cats, .single-details {
-    display: grid;
-    align-content: space-between;
-    height: 100%;
+    display: block;
+    /* align-content: space-between;
+    height: 100%; */
 }
 .single-cats, .single-details {
     font-size: 14px;
     padding: 0;
+}
+
+.single-details li, .single-cats li {
+    margin-bottom: 15px;
 }
 
 .single-cats {
@@ -372,6 +391,10 @@ header nav {
     margin-left: 25px;
 }
 
+.person-name {
+    line-height: 1;
+}
+
 .person-name, .person-title {
     font-size: 24px;
 }
@@ -444,8 +467,8 @@ header nav {
 .project-page footer,
 .practice-page footer,
 .people-page footer {
-    background-color: #4e4e4e;
-    color: #fff;
+    background-color: #ffefef;
+    color: #4e4e4e;
 }
 
 footer {
@@ -470,7 +493,7 @@ footer {
 }
 
 .footer-container a, .footer-container a:hover {
-    color: #fff
+    color: #4e4e4e
 }
 
 .contact-container .footer-container a {
@@ -579,7 +602,7 @@ footer p {
      margin-top: 0;
     }
  
-     .contact-content .map {
+    .contact-content .map {
          margin-bottom: 10px;
     }
 }
@@ -596,6 +619,10 @@ footer p {
 
     .map img {
         height: 300px;
+    }
+
+    .contact-address h2 {
+        font-size: 28px;
     }
 
 }
@@ -673,7 +700,7 @@ footer p {
         height: 100vh;
         /* top: -100vh; */
         right: 0;
-        background-color: #fff;
+        background-color: #ffefef;
     }
 
     .menu-toggle {

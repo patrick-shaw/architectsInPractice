@@ -1,21 +1,19 @@
 const homeCont = document.getElementById('home-container');
 const homeTitle = document.getElementById('home-title');
-const randNum = (Math.ceil(Math.random() * 3));
+const randNum = (Math.ceil(Math.random() * 5));
 
 
 function homeTitleSelect(num) {
     if (num === 1) {
-        homeTitle.innerHTML = "Project-single"
+        homeTitle.innerHTML = "Reardon Street"
     } else if (num === 2) {
-        homeTitle.innerHTML = "Project-single"
+        homeTitle.innerHTML = "Chimney Terrace"
     } else if (num === 3) {
-        homeTitle.innerHTML = "Project-single"
+        homeTitle.innerHTML = "Gatehouse School"
     } else if (num === 4) {
-        homeTitle.innerHTML = "Project-single"
+        homeTitle.innerHTML = "Ossory"
     } else if (num === 5) {
-        homeTitle.innerHTML = "Project-single"
-    } else if (num === 6) {
-        homeTitle.innerHTML = "Project-single"
+        homeTitle.innerHTML = "America Square"
     }
 }
 
@@ -33,7 +31,9 @@ function homeImgSelect(x) {
 
     homeTitleSelect(randNum);
 
-    projectLink.href = `${homeTitle.innerHTML}.html`
+    let link = homeTitle.innerHTML.replace(/\s+/g, '-').toLowerCase();
+
+    projectLink.href = `projects/${link}.html`
     projectLink.appendChild(homeTitle)
 
     homeCont.appendChild(projectLink);
