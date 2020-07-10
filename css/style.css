@@ -328,13 +328,17 @@ header.dark a:hover {
 .practice-page,
 .practice-page a,
 .practice-page a:hover {
-    color: #fff;
+    color: #4e4e4e;
     text-decoration: none;
     z-index: 10;
 }
 
+.process {
+    font-size: 36px;
+}
+
 .practice-showcase {
-    background: url(../img/practice.png) center center/cover no-repeat;
+    background: url(../img/Practice_MainImage/1_Desktop/TestCard_3000x1500.jpg) center center/cover no-repeat;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -569,6 +573,10 @@ footer p {
         background: url(../img/5_AmericaSquare/Project_MainImage/2_Laptop/AmericaSquare_ProjectMain_1440x800.jpg) center center/cover no-repeat;
     }
 
+    .practice-showcase {
+        background: url(../img/Practice_MainImage/2_Laptop/TestCard_1440x800.jpg) center center/cover no-repeat;
+    }
+
     .container {
         max-width: 1200px
     }
@@ -684,6 +692,10 @@ footer p {
         background: url(../img/5_AmericaSquare/Project_MainImage/3_Tablet/AmericaSquare_ProjectMain_1536x2040.jpg) center center/cover no-repeat;
     }
 
+    .practice-showcase {
+        background: url(../img/Practice_MainImage/3_Tablet/TestCard_1536x2040.jpg) center center/cover no-repeat;
+    }
+
     /* Page footer distance */
     .practice-page .container {
         padding-bottom: 24px;
@@ -794,6 +806,10 @@ footer p {
     }
     .showcase.america {
         background: url(../img/5_AmericaSquare/Project_MainImage/4_Mobile/AmericaSquare_ProjectMain_750x1192.jpg) center center/cover no-repeat;
+    }
+
+    .practice-showcase {
+        background: url(../img/Practice_MainImage/4_Mobile/TestCard_750x1192.jpg) center center/cover no-repeat;
     }
 
     /* Page footer distance */
