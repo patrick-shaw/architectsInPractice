@@ -359,13 +359,27 @@ header.dark a:hover {
     padding-bottom: 280px;
 }
 
+.practice-row {
+    margin-bottom: 70px;
+}
+
+.practice-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 .practice-desc {
     color: #4e4e4e;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .practice-desc h3 {
     font-size: 32px;
+}
+
+.practice-desc p {
+    margin-bottom: 8px;
 }
 
 /* ===== PEOPLE ===== */
@@ -379,6 +393,9 @@ header.dark a:hover {
 
 .people-page {
     background-color: #fff;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 0 1fr auto;
 }
 
 .people-container {
@@ -395,8 +412,8 @@ header.dark a:hover {
 
 
 .person-img img {
-    height: 350px;
-    width: 245px;
+    height: 397px;
+    width: 280px;
     object-fit: cover;
 }
 
@@ -416,8 +433,24 @@ header.dark a:hover {
     color: #828282;
 }
 
+.person-qualification {
+    font-size: 16px;
+}
+
+.person-detail {
+    margin-bottom: 0;
+}
+
+.person-detail p {
+    margin-bottom: 8px;
+}
+
 .person-info p {
     font-size: 16px;
+}
+
+.read-more {
+    cursor: pointer;
 }
 
 /* ===== CONTACT PAGE ===== */
@@ -715,7 +748,6 @@ footer p {
         padding-bottom: 80px;
     }
 
-
     .single-page .container {
         padding-top: 40px;
     }
@@ -725,6 +757,9 @@ footer p {
     .single-desc {
         padding-right: 200px;
         padding-bottom: 80px;
+    }
+    .single-details li, .single-cats li {
+        margin-bottom: 10px;
     }
     .description {
         padding-bottom: 50px;
