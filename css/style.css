@@ -141,6 +141,10 @@ header.dark a:hover {
     text-decoration: none;
 }
 
+.project-page .container {
+    padding-bottom: 100px;
+}
+
 .container {
     max-width: 1400px;
     padding: 240px 50px 50px;
@@ -356,7 +360,7 @@ header.dark a:hover {
 
 .practice-page .container {
     padding-top: 70px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 
 .practice-row {
@@ -412,13 +416,15 @@ header.dark a:hover {
 
 
 .person-img img {
-    height: 397px;
-    width: 280px;
-    object-fit: cover;
+    height: 570px;
+    width: auto;
 }
 
 .person-info {
-    margin-left: 25px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .person-name {
@@ -449,8 +455,15 @@ header.dark a:hover {
     font-size: 16px;
 }
 
-.read-more {
+#read-more {
     cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 0;
+
+}
+
+.remove-desktop {
+    display: none;
 }
 
 /* ===== CONTACT PAGE ===== */
@@ -610,6 +623,14 @@ footer p {
         background: url(../img/Practice_MainImage/2_Laptop/TestCard_1440x800.jpg) center center/cover no-repeat;
     }
 
+    .person-img img {
+        height: 482px;
+    }
+
+    .person-block {
+        max-width: 830px;
+    }
+
     .container {
         max-width: 1200px
     }
@@ -646,6 +667,15 @@ footer p {
     .brand, .nav-list-item {
         font-size: 30px;
         padding: 0 4px;
+    }
+
+    .person-img img {
+        height: 393px;
+        width: auto;
+    }
+
+    .person-block {
+        max-width: 750px;
     }
 
     .container {
@@ -731,10 +761,10 @@ footer p {
 
     /* Page footer distance */
     .practice-page .container {
-        padding-bottom: 24px;
+        padding-bottom: 160px;
     }
     .back-top {
-        margin-bottom: 80px;
+        margin: 90px 0;
         font-size: 14px;
     }
 
@@ -746,6 +776,10 @@ footer p {
     }
     .project-pb {
         padding-bottom: 80px;
+    }
+
+    .project-page .container {
+        padding-bottom: 100px;
     }
 
     .single-page .container {
@@ -852,13 +886,13 @@ footer p {
         padding-bottom: 70px;
     }
     .practice-page .container {
-        padding: 40px 15px 44px;
+        padding: 40px 15px 80px;
     }
     .people-page .container {
-        padding-bottom: 54px;
+        padding-bottom: 70px;
     }
     .back-top {
-        margin-bottom: 100px;
+        margin: 50px 0;
         font-size: 14px;
     }
 
@@ -911,7 +945,7 @@ footer p {
         margin-bottom: 13px;
     }
     .person-img img {
-        width: 47%;
+        width: 60%;
         height: auto;
     }
 
@@ -923,6 +957,14 @@ footer p {
     }
     .person-name {
         margin-bottom: 3px;
+    }
+
+    .remove-desktop {
+        display: block;
+    }
+
+    .remove-mobile {
+        display: none;
     }
 
 

@@ -86,6 +86,6 @@ projectContainer.forEach(item => {
 const readMore = document.getElementById('read-more');
 readMore.addEventListener('click', () => {
     setTimeout(() => {
-        !readMore.classList.contains('collapsed') ? readMore.innerHTML = 'Read less' : readMore.innerHTML = 'Read more.'
+        !readMore.classList.contains('collapsed') ? readMore.innerHTML = 'Read less' : readMore.innerHTML = 'Read more'
     }, 200)
 })
