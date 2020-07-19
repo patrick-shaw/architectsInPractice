@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: apRegular;
-    src: url(../fonts/RoobertTRIAL-Regular.woff2);
+    src: url(../fonts/Roobert-Regular.woff2);
 }
 
 * {
@@ -378,11 +378,11 @@ header.dark a:hover {
     margin-bottom: 20px;
 }
 
-/* .process-desc {
+.process-desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
-} */
+}
 
 .practice-desc h3 {
     font-size: 32px;
@@ -428,6 +428,9 @@ header.dark a:hover {
 
 .person-info {
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .person-name {
@@ -802,6 +805,10 @@ footer p {
         padding-bottom: 50px;
     }
 
+    .practice-desc {
+        padding-right: 200px;
+    }
+ 
     .practice-desc h3 {
         padding-bottom: 10px;
     }
@@ -938,6 +945,9 @@ footer p {
     }
 
 
+    .practice-desc {
+        padding-right: 15px;
+    }
     .practice-desc h3 {
         font-size: 24px;
     }
